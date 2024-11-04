@@ -26,7 +26,6 @@
     "next-secure-headers": "^2.2.0"
   },
   "engines": {
-    "node": ">=18",
-    "npm": ">=8"
+    "node": "=20"
   }
 }
