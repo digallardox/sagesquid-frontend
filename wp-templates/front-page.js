@@ -36,9 +36,10 @@ export default function Component() {
           <div className="text-white">
             {posts.map((e) => (
               <>
-              <Link href={e.uri}>
+              {/* cannot use Link without an issue on the single.js template */}
+              <a href={e.uri}>
                 <h2>{e.title}</h2>
-              </Link>
+              </a>
                 <div dangerouslySetInnerHTML={{ __html: e.excerpt }} />
               </>
             ))}

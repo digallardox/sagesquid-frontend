@@ -60,7 +60,8 @@ export default function Component(props) {
     return <>Loading...</>;
   }
 
-  const { post } = useFaustQuery(GET_POST_QUERY);
+  const postInt = useFaustQuery(GET_POST_QUERY);
+  const { post } = postInt
   const { generalSettings, headerMenuItems, footerMenuItems } =
     useFaustQuery(GET_LAYOUT_QUERY);
 
